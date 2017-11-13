@@ -1,0 +1,23 @@
+ page_path  GET     /                                               Discuss.PageController :index
+topic_path  GET     /topics/new                                     Discuss.TopicController :new
+topic_path  POST    /topics                                         Discuss.TopicController :create
+topic_path  GET     /topics                                         Discuss.TopicController :index
+topic_path  GET     /topics/:id/edit                                Discuss.TopicController :edit
+topic_path  PUT     /topics/:id                                     Discuss.TopicController :update
+topic_path  GET     /topics/:id                                     Discuss.TopicController :delete
+topic_path  GET     /topics/welcome                                 Discuss.TopicController :welcome
+topic_path  GET     /topics/hillroom/mnist/startindex               Discuss.TopicController :startindex
+topic_path  GET     /topics/hillroom/mnist/startindex/useapp        Discuss.TopicController :useapp
+topic_path  POST    /topics/hillroom/mnist/startindex/classify      Discuss.TopicController :classifyimage
+topic_path  POST    /topics/hillroom/mnist/startindex               Discuss.TopicController :startindex
+ auth_path  GET     /auth/signout                                   Discuss.AuthController :signout
+ auth_path  GET     /auth/:provider                                 Discuss.AuthController :request
+ auth_path  GET     /auth/:provider/callback                        Discuss.AuthController :callback
+topic_path  GET     /api/topics/hillroom/mnist/startindex           Discuss.TopicController :index
+topic_path  GET     /api/topics/hillroom/mnist/startindex/:id/edit  Discuss.TopicController :edit
+topic_path  GET     /api/topics/hillroom/mnist/startindex/new       Discuss.TopicController :new
+topic_path  GET     /api/topics/hillroom/mnist/startindex/:id       Discuss.TopicController :show
+topic_path  POST    /api/topics/hillroom/mnist/startindex           Discuss.TopicController :create
+topic_path  PATCH   /api/topics/hillroom/mnist/startindex/:id       Discuss.TopicController :update
+            PUT     /api/topics/hillroom/mnist/startindex/:id       Discuss.TopicController :update
+topic_path  DELETE  /api/topics/hillroom/mnist/startindex/:id       Discuss.TopicController :delete

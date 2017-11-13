@@ -1,0 +1,13 @@
+<h4> You can use the app now...</br></h4>
+
+<%= form_for @changeset, topic_path(@conn, :classifyimage), [multipart: true], fn f -> %>
+
+ <div class="form-group">
+    <label>Upload and Image</label>
+    <%= file_input f, :photo, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>
