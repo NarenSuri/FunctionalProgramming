@@ -1,0 +1,3 @@
+defmodule Profilehashmapimage.imagestructattrib do
+
+end

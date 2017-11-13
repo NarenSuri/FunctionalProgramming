@@ -1,0 +1,253 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.18.1">
+    <title>Discuss.TopicController – discuss v0.0.1</title>
+    <link rel="stylesheet" href="dist/app-c922dbe7ef.css" />
+    
+    <script src="dist/sidebar_items-6ba9329e34.js"></script>
+    
+    
+    
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+
+    <div class="main">
+<button class="sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<section class="sidebar">
+
+  
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        discuss
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.0.1
+      </h2>
+    </div>
+    
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">discuss v0.0.1</small>
+        Discuss.TopicController
+        
+      </h1>
+
+      
+        <section id="moduledoc">
+          <p>The Topic Controller is the heart of this  application. Most of he logic requests are routed here and processed.</p>
+
+        </section>
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#classifyimage/2">classifyimage(conn, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The classifyimage(conn, params) function is used to classify the image. Also, on a sucessful upload of the file, the file is copied to the temp and the file name is modified to avoid the conflict in the file names gnereated by the various users. The file name is relaed with their gihub profile id and the timestamp of sec after the georgian time, this way there will no name collisions. The obtained file is then passed to the CNN which is trained already. The file user has sent is first validated to check if its an image. If the file is an image then the tensorflow code will use the trained weights and clasify the digit</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#startindex/2">startindex(conn, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The start index functionality lets the users to be redirected to the start index page unless they signin using the github. This page works as a shield to the applcation, where users have to first signin and then they are automatically redicted to the applicaiton page only after a sucessful signon. The users are required to authenticate themselves using their github account</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#useapp/2">useapp(conn, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Once the user sucessfully login, they are redirected ot his page. The user is provided with the page where they can upload an image for accesing the CNN powered digit classification</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#welcome/2">welcome(conn, params)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>The welcome page is a simple dummy page with no logic. this is a test page</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+        </section>
+      
+
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="classifyimage/2">
+  
+  
+  <div class="detail-header">
+    <a href="#classifyimage/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">classifyimage(conn, params)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>The classifyimage(conn, params) function is used to classify the image. Also, on a sucessful upload of the file, the file is copied to the temp and the file name is modified to avoid the conflict in the file names gnereated by the various users. The file name is relaed with their gihub profile id and the timestamp of sec after the georgian time, this way there will no name collisions. The obtained file is then passed to the CNN which is trained already. The file user has sent is first validated to check if its an image. If the file is an image then the tensorflow code will use the trained weights and clasify the digit. </p>
+
+  </section>
+</div>
+<div class="detail" id="startindex/2">
+  
+  
+  <div class="detail-header">
+    <a href="#startindex/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">startindex(conn, params)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>The start index functionality lets the users to be redirected to the start index page unless they signin using the github. This page works as a shield to the applcation, where users have to first signin and then they are automatically redicted to the applicaiton page only after a sucessful signon. The users are required to authenticate themselves using their github account. </p>
+
+  </section>
+</div>
+<div class="detail" id="useapp/2">
+  
+  
+  <div class="detail-header">
+    <a href="#useapp/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">useapp(conn, params)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>Once the user sucessfully login, they are redirected ot his page. The user is provided with the page where they can upload an image for accesing the CNN powered digit classification. </p>
+
+  </section>
+</div>
+<div class="detail" id="welcome/2">
+  
+  
+  <div class="detail-header">
+    <a href="#welcome/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">welcome(conn, params)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>The welcome page is a simple dummy page with no logic. this is a test page. </p>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.18.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+        <button class="night-mode-toggle"><span class="sr-only">Switch theme</span></button>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-778c9ef903.js"></script>
+  
+  
+  
+  
+  </body>
+</html>
+
